@@ -1,8 +1,1 @@
-from bookshelf.models import Book
-
-# Delete the book you created
-book_to_delete = Book.objects.get(title='Sample Book')
-book_to_delete.delete()
-
-# Confirm deletion by trying to retrieve all books
-all_books = Book.objects.all()
+from bookshelf.models import Book instance = Book.objects.create(id=1,title='1984',author='George Orwell',publication_year= '1949') book = Book.objects.get(id=1) book.delete()
